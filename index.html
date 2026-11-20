@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melody Fit - Your Fitness Assistant</title>
+
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff5f8;
+      text-align: center;
+    }
+
+    header {
+      padding: 35px 15px;
+      background: #f5b8ce;
+      color: #543444;
+    }
+
+    h1 {
+      margin-bottom: 8px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .intro {
+      padding: 25px;
+      color: #624b57;
+    }
+
+    df-messenger {
+      z-index: 999;
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      --df-messenger-button-titlebar-color: #e99ab9;
+      --df-messenger-chat-background-color: #fffafd;
+      --df-messenger-font-color: #333;
+      --df-messenger-send-icon: #d76e9a;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Melody Fit</h1>
+    <p>Your Personal Fitness & Nutrition Assistant</p>
+  </header>
+
+  <div class="intro">
+    <h2>Xin chào! Mình là Melody 💗</h2>
+    <p>Trợ lý đồng hành cùng bạn trong luyện tập và dinh dưỡng.</p>
+    <p>Hãy nhấn biểu tượng chat ở góc dưới bên phải để bắt đầu nhé!</p>
+  </div>
+
+  <df-messenger
+    intent="WELCOME"
+    chat-title="Melody"
+    agent-id="2fa1d548-bf54-4500-a635-002b27e18907"
+    language-code="vi">
+  </df-messenger>
+</body>
+</html>
